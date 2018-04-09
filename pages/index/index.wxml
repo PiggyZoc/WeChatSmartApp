@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+<view>
+<image class='img' src='../images/ali.png'  mode='aspectFit'></image>
+</view>
+ <button class='jump' bindtap='jump'  plain='true'>Please Input</button>
+ <view class='info'>
+<view><text>Email   : </text><text>LY3327@gmail.com</text></view>
+<view><text>WeChat : </text><text>piggy2016</text></view>
+ </view>
+</view>

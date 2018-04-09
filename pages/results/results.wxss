@@ -1,0 +1,101 @@
+/* pages/results/results.wxss */
+.input{
+ border-radius: 16px;
+ line-height: 30px;
+height: 32px;
+text-align: left;
+border: 1px grey lightgray;
+padding-left: 10px;
+margin-left: 6px;
+margin-right: 6px;
+background-color: lightgray;
+}
+.btn{
+  margin-top: 8px;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  font-weight: bolder;
+  text-align: center;
+   border-radius: 16px;
+ line-height: 30px;
+height: 32px;
+color:black;
+padding-top: 2px;
+padding-bottom: 2px;
+margin-bottom: 10px;
+background-color: salmon;
+border :1px grey salmon;
+padding-left: 10px;
+margin-left: 6px;
+margin-right: 6px;
+}
+.btn::after{
+  border: 0px salmon solid;
+}
+
+.topbar{
+  overflow: hidden;
+}
+.Cata{
+  margin-left: 6px;
+  margin-right: 12px;
+  color: goldenrod;
+  font-weight: bold;
+  float: left;
+  }
+.orign{
+  color:palevioletred;
+  font-style: italic;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-bottom: 5px;
+  margin-top: 3px;
+}
+.pre{
+  float: left;
+  margin-right: 2px;
+  font-weight: bold;
+}
+.senses{
+  border:1px dashed salmon;
+  margin-bottom: 16px;
+  margin-left: 6px;
+  margin-right: 6px;
+  border-radius: 6px;
+  padding: 2px;
+  font-size: 16px;
+}
+.subsenses{
+  border-top: 1px dashed salmon;
+  margin-top: 6px;
+  margin-bottom: 3px;
+ }
+.index{
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  height: 12px;
+  width: 12px;
+  border-radius: 6px;
+  background-color: black;
+  line-height: 12px;
+  font-size: 10px;
+  color: whitesmoke;
+  margin-right: 2px;
+  margin-top: 5px;
+}
+.def{
+   float: left; 
+   background: grey;
+   color: wheat;
+   border-radius: 50%;
+   overflow: hidden;
+   height: 14px;
+   font-size: 12px;
+   line-height: 14px;
+   padding: 1px;
+   margin-right: 2px;
+   margin-top: 4px;
+}
+.deftext{
+  font-weight: bold;
+}

@@ -1,0 +1,28 @@
+/**index.wxss**/
+
+
+.img {
+  margin-top: 70rpx;
+  display: block;
+  width: 388rpx;
+  height: 388rpx;
+  border-radius: 50%;
+}
+
+.jump{
+  margin-top: 108rpx;
+ width: 97%;
+ border-radius: 16px;
+ line-height: 32px;
+height: 32px;
+text-align: left;
+font-style: italic;
+color: grey;
+}
+.info{
+  margin-top: 190rpx;
+  border-radius: 3px;
+  border: 1px salmon solid;
+  padding: 4px;
+ color: salmon;
+}

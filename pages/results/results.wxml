@@ -1,0 +1,43 @@
+<input class='input' placeholder-style="font-style: italic;" name="mobile" placeholder="Please Input Here" bindinput="mobileInputEvent" />
+<button class='btn' bindtap='lookup' disabled='{{disabled}}'>Look Up</button>
+<view wx:for="{{results}}">
+  <view class='topbar'>
+    <view class='Cata'>{{item.LexicalCategory}}</view>
+       <view wx:if="{{item.Pronunciations[0].PhoneticSpelling.length>0 }}">
+      <text>/</text>{{item.Pronunciations[0].PhoneticSpelling }}
+      <text>/</text>
+   </view>
+</view>
+<view class='orign' wx:if="{{item.Entries[0].etymologies [0].length>0}}">
+  <view class='pre'>Orgin:</view>{{item.Entries[0].etymologies [0]}}</view>
+<view wx:for="{{item.Entries[0].Senses}}">
+  <view class="senses" wx:if="{{item.Definitions[0].length>0}}">
+    <view class='deftext'>
+      <view class='def'>Def.</view>
+      <view>{{item.Definitions[0] }}</view>
+    </view>
+    <view wx:for="{{item.Examples}}">
+      <view class='index'>{{index+1}}</view>
+      <view>{{item.Text}}</view>
+    </view>
+
+
+    <view  wx:for="{{item.Subsenses}}">
+
+      <view class='deftext' wx:if="{{item.Definitions[0].length>0}}">
+      <view class="subsenses">
+        <view class='def'>Def.</view>
+        <view>{{item.Definitions[0]}}
+        </view>
+        </view>
+      </view>
+
+      <view wx:for="{{item.Examples}}">
+        <view class='index'>{{index+1}}</view>
+        <view>{{item.Text}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+</view>
