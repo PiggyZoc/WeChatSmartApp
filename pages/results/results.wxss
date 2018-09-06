@@ -56,7 +56,7 @@ margin-right: 6px;
   font-weight: bold;
 }
 .senses{
-  border:1px dashed salmon;
+  border:1px solid salmon;
   margin-bottom: 16px;
   margin-left: 6px;
   margin-right: 6px;
@@ -65,7 +65,7 @@ margin-right: 6px;
   font-size: 16px;
 }
 .subsenses{
-  border-top: 1px dashed salmon;
+  border-top: 1px solid salmon;
   margin-top: 6px;
   margin-bottom: 3px;
  }

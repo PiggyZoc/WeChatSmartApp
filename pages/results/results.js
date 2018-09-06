@@ -21,32 +21,17 @@ Page({
     this.setData({
       disabled: true
     })
+
     wx.request({
-      url: 'https://wz66.top/service1.asmx/insertWord',
+      url: 'https://wz66.top/get_word',
       data: {
-        word: value
+        word_id: value
       },
-      method: 'POST',
+      method: 'GET',
       success: function (res) {
-        console.log(1);
-      },
-      fail: function (res) {
-        console.log('submit fail');
-      },
-      complete: function (res) {
-        console.log('submit complete');
-      
-      }
-    })
-    wx.request({
-      url: 'https://wz66.top/service1.asmx/getResult',
-      data: {
-        word: value
-      },
-      method: 'POST',
-      success: function (res) {
+        console.log(res.data)
         that.setData({
-          results: res.data.d.Results[0].LexicalEntries
+                 results: res.data.results[0].lexicalEntries
         })
 
       },

@@ -19,10 +19,3 @@ text-align: left;
 font-style: italic;
 color: grey;
 }
-.info{
-  margin-top: 190rpx;
-  border-radius: 3px;
-  border: 1px salmon solid;
-  padding: 4px;
- color: salmon;
-}

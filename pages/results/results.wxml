@@ -1,40 +1,40 @@
-<input class='input' placeholder-style="font-style: italic;" name="mobile" placeholder="Please Input Here" bindinput="mobileInputEvent" />
+<input class='input' placeholder-style="font-style: italic;" name="mobile" placeholder="Please Input Here" bindinput="mobileInputEvent"  confirm-type='search'   bindconfirm="lookup"/>
 <button class='btn' bindtap='lookup' disabled='{{disabled}}'>Look Up</button>
 <view wx:for="{{results}}">
   <view class='topbar'>
-    <view class='Cata'>{{item.LexicalCategory}}</view>
-       <view wx:if="{{item.Pronunciations[0].PhoneticSpelling.length>0 }}">
-      <text>/</text>{{item.Pronunciations[0].PhoneticSpelling }}
+    <view class='Cata'>{{item.lexicalCategory}}</view>
+       <view wx:if="{{item.pronunciations[0].phoneticSpelling.length>0 }}">
+      <text>/</text>{{item.pronunciations[0].phoneticSpelling }}
       <text>/</text>
    </view>
 </view>
-<view class='orign' wx:if="{{item.Entries[0].etymologies [0].length>0}}">
-  <view class='pre'>Orgin:</view>{{item.Entries[0].etymologies [0]}}</view>
-<view wx:for="{{item.Entries[0].Senses}}">
-  <view class="senses" wx:if="{{item.Definitions[0].length>0}}">
+<view class='orign' wx:if="{{item.entries[0].etymologies [0].length>0}}">
+  <view class='pre'>Orgin:</view>{{item.entries[0].etymologies [0]}}</view>
+<view wx:for="{{item.entries[0].senses}}">
+  <view class="senses" wx:if="{{item.definitions[0].length>0}}">
     <view class='deftext'>
       <view class='def'>Def.</view>
-      <view>{{item.Definitions[0] }}</view>
+      <view>{{item.definitions[0] }}</view>
     </view>
-    <view wx:for="{{item.Examples}}">
+    <view wx:for="{{item.examples}}">
       <view class='index'>{{index+1}}</view>
-      <view>{{item.Text}}</view>
+      <view>{{item.text}}</view>
     </view>
 
 
-    <view  wx:for="{{item.Subsenses}}">
+    <view  wx:for="{{item.subsenses}}">
 
-      <view class='deftext' wx:if="{{item.Definitions[0].length>0}}">
+      <view class='deftext' wx:if="{{item.definitions[0].length>0}}">
       <view class="subsenses">
         <view class='def'>Def.</view>
-        <view>{{item.Definitions[0]}}
+        <view>{{item.definitions[0]}}
         </view>
         </view>
       </view>
 
-      <view wx:for="{{item.Examples}}">
+      <view wx:for="{{item.examples}}">
         <view class='index'>{{index+1}}</view>
-        <view>{{item.Text}}</view>
+        <view>{{item.text}}</view>
       </view>
     </view>
   </view>
